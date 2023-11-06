@@ -1,8 +1,8 @@
 package student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.initialize;
 
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.beans.factory.InitializingBean;
 import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Player.Player;
 import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Player.PlayerService;
 import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Team.Team;

@@ -131,10 +131,13 @@ public class NbaApplicationCommand implements CommandLineRunner {
                             System.out.println("Enter team's name:  ");
                             String name = scanner.next();
                             Optional<Team> team = teamService.findByName(name);
-                            if (team.isPresent()) {
+                            List<Player> players = playerService.findByTeam(team.get());
+                            if (team.isPresent() && players.isEmpty()) {
                                 teamService.remove(team.get());
                                 System.out.println("Team was deleted");
                             }
+                            else if (!players.isEmpty())
+                                System.out.println("There are still players in the team. Remove them first!");
                             else
                                 System.out.println("Team does not exist!!");
                         }

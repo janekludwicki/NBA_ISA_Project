@@ -1,12 +1,10 @@
 package student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Player;
 
 
+import jakarta.persistence.*;
 import lombok.*;
 import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Team.Team;
 
-import jakarta.persistence.*;
-import java.io.Serializable;
-import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -20,6 +18,7 @@ import java.util.UUID;
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Player implements Comparable<Player> {
     @Id
+    @GeneratedValue(generator = "UUID")
     @Column(name="player_id")
     private UUID playerID;
     private String name;
