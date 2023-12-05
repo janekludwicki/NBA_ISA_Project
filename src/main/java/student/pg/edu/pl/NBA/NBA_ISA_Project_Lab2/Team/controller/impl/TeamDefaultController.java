@@ -1,0 +1,80 @@
+package student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.controller.impl;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.player.entity.Player;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.dto.*;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.player.function.RequestToPlayerFunction;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.player.service.PlayerService;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.controller.api.TeamController;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.entity.Team;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.function.RequestToTeamFunction;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.function.TeamToResponseFunction;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.function.TeamsToResponseFunction;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.function.UpdateTeamWithRequestFunction;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.service.TeamService;
+
+import java.util.Optional;
+import java.util.UUID;
+
+@RestController
+@Log
+@RequiredArgsConstructor
+public class TeamDefaultController implements TeamController {
+    private final TeamService teamService;
+    private final PlayerService playerService;
+
+    private final TeamsToResponseFunction teamsToResponseFunction;
+    private final TeamToResponseFunction teamToResponseFunction;
+    private final RequestToTeamFunction requestToTeamFunction;
+    private final UpdateTeamWithRequestFunction updateTeamWithRequestFunction;
+
+    @Override
+    public GetTeamsResponse getTeams() { return teamsToResponseFunction.apply(teamService.findAll());}
+
+    @Override
+    public GetTeamResponse getTeam(UUID id) {
+        return teamToResponseFunction.apply(teamService.findById(id)
+                .orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND)));
+    }
+
+    @Override
+    public void putTeam(PutTeamRequest request) {
+        Team team = requestToTeamFunction.apply(request);
+        teamService.addTeam(team);
+    }
+
+    @Override
+    public void putPlayer(UUID teamID, PutPlayerRequest request) {
+        teamService.findById(teamID).ifPresent(team -> playerService.findById(request.getPlayerID()).ifPresentOrElse(
+                player -> {
+                    player.setTeam(team);
+                    playerService.addPlayer(player);
+                },
+                () -> {
+                    throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+                }
+        ));
+    }
+
+    @Override
+    public void patchTeam(UUID id, PatchTeamRequest request) {
+        teamService.findById(id).ifPresentOrElse(
+                team -> {
+                    teamService.update(updateTeamWithRequestFunction.apply(team, request));
+                }, () -> { throw new ResponseStatusException(HttpStatus.NOT_FOUND); }
+        );
+    }
+
+    @Override
+    public void deleteTeam(UUID id) {
+        teamService.findById(id).ifPresentOrElse(
+                teamService::remove,
+                ()->{ throw new ResponseStatusException(HttpStatus.NOT_FOUND); }
+        );
+    }
+}
