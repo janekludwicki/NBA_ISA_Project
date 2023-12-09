@@ -30,21 +30,6 @@ public class PlayerDefaultController implements PlayerController {
     private final PlayerToResponseFunction playerToResponseFunction;
     private final UpdatePlayerWithRequestFunction updatePlayerWithRequestFunction;
 
-    /*public PlayerDefaultController (PlayerService playerService,
-    TeamService teamService, RequestToPlayerFunction requestToPlayerFunction,
-    PlayersByTeamToResponseFunction playersByTeamToResponseFunction,
-    PlayersToResponseFunction playersToResponseFunction,
-    PlayerToResponseFunction playerToResponseFunction,
-    UpdatePlayerWithRequestFunction updatePlayerWithRequestFunction) {
-        this.playerService = playerService;
-        this.playersByTeamToResponseFunction = playersByTeamToResponseFunction;
-        this.requestToPlayerFunction = requestToPlayerFunction;
-        this.teamService = teamService;
-        this.playersToResponseFunction = playersToResponseFunction;
-        this.playerToResponseFunction = playerToResponseFunction;
-        this.updatePlayerWithRequestFunction = updatePlayerWithRequestFunction;
-    }*/
-
     @Override
     public GetPlayersResponse getPlayers() {
         return playersToResponseFunction.apply(playerService.findAll());

@@ -17,6 +17,7 @@ public class PlayersByTeamToResponseFunction implements Function<List<Player>, G
                         .map(player -> GetPlayersResponse.Player.builder()
                                 .id(player.getPlayerID())
                                 .name(player.getName())
+                                .surname(player.getSurname())
                                 .build())
                         .toList())
                 .build();

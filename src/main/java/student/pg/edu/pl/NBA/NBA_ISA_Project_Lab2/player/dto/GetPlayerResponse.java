@@ -25,6 +25,8 @@ public class GetPlayerResponse {
         private UUID id;
 
         private String name;
+
+        private String surname;
     }
 
     private UUID id;

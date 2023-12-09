@@ -29,7 +29,7 @@ public interface TeamController {
                 PutTeamRequest request
         );
 
-        @PutMapping("/teams/{teamID}/employees")
+        @PutMapping("/teams/{teamID}/players")
         @ResponseStatus(HttpStatus.OK)
         void putPlayer(
                 @PathVariable("teamID")
