@@ -1,10 +1,12 @@
 package student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.function;
 
+import org.springframework.stereotype.Component;
 import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.dto.PatchTeamRequest;
 import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.entity.Team;
 
 import java.util.function.BiFunction;
 
+@Component
 public class UpdateTeamWithRequestFunction implements BiFunction<Team, PatchTeamRequest, Team> {
 
     @Override

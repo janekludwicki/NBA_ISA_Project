@@ -3,10 +3,10 @@ package student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.cmd;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Player.Player;
-import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Player.PlayerService;
-import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Team.Team;
-import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Team.TeamService;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.player.entity.Player;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.player.service.PlayerService;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.entity.Team;
+import student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.team.service.TeamService;
 
 import java.util.List;
 import java.util.Optional;
