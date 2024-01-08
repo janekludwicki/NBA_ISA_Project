@@ -1,0 +1,33 @@
+###Get all teams
+GET http://localhost:8082/api/teams
+
+### Get team (Los Angeles Lakers)
+GET http://localhost:8082/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+
+### Get nonexistent team
+GET http://localhost:8082/api/teams/f08ef7e3-7f2a-4378-b1fb-2922d730c70d
+
+### Create new shop
+POST http://localhost:8082/api/teams
+Content-Type: application/json
+
+{
+  "name": "Politechnika",
+  "city": "Gdansk",
+  "coach": "Guss",
+  "noOfChampionships": 14
+}
+
+### Change team's info
+PATCH http://localhost:8082/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+Content-Type: application/json
+
+{
+  "name": "Lakers Changed",
+  "city": "Los Angeles",
+  "coach": "Guss",
+  "noOfChampionships": 20
+}
+
+### Delete Team
+DELETE http://localhost:8082/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76

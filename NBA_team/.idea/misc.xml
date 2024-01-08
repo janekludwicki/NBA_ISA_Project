@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/NBA_modules/NBA_player/pom.xml" />
+        <option value="$PROJECT_DIR$/NBA_modules/NBA/pom.xml" />
+        <option value="$PROJECT_DIR$/NBA_modules/NBA_Player/pom.xml" />
+        <option value="$PROJECT_DIR$/NBA/pom.xml" />
+        <option value="$PROJECT_DIR$/ISA/NBA/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/NBA/pom.xml" />
+        <option value="$PROJECT_DIR$/NBA_modules/NBA_player/pom.xml" />
+        <option value="$PROJECT_DIR$/player/pom.xml" />
+        <option value="$PROJECT_DIR$/team/pom.xml" />
+      </set>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="openjdk-18" project-jdk-type="JavaSDK" />
+</project>
