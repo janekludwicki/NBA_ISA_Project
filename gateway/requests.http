@@ -1,0 +1,83 @@
+###Get all players
+GET http://localhost:8080/api/players
+
+###Get all teams
+GET http://localhost:8080/api/teams
+
+### Get player (Jaylen Brown)
+GET http://localhost:8080/api/players/f08ef7e3-7f2a-4378-b1fb-2922d730c70d
+
+### Get team (Los Angeles Lakers)
+GET http://localhost:8080/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+
+### Get team's players
+GET http://localhost:8080/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/players
+
+### Get nonexistent player
+GET http://localhost:8080/api/players/5d1da2ae-6a14-4b6d-8b4f-d117867118d4
+
+### Get nonexistent team
+GET http://localhost:8080/api/teams/f08ef7e3-7f2a-4378-b1fb-2922d730c70d
+
+### Create new player
+POST http://localhost:8080/api/players
+Content-Type: application/json
+
+{
+  "name": "John",
+  "surname": "Ludwiki",
+  "yearOfBirth": 2002,
+  "jerseyNo": 89,
+  "Height": 196,
+  "position": "SF",
+  "teamID": "f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"
+}
+
+### Create new team
+POST http://localhost:8080/api/teams
+Content-Type: application/json
+
+{
+  "name": "Politechnika",
+  "city": "Gdansk",
+  "coach": "Guss",
+  "noOfChampionships": 14
+}
+
+### Add Jaylen Brown to Los Angeles Lakers
+PUT http://localhost:8080/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/players
+Content-Type: application/json
+
+{
+  "playerID": "f08ef7e3-7f2a-4378-b1fb-2922d730c70d"
+}
+
+### Change player's info
+PATCH http://localhost:8080/api/players/f08ef7e3-7f2a-4378-b1fb-2922d730c70d
+Content-Type: application/json
+
+{
+  "name": "Jaylen Changed",
+  "surname": "Brown",
+  "yearOfBirth": 2002,
+  "jerseyNo": 89,
+  "Height": 196,
+  "position": "SF"
+}
+
+### Change team's info
+PATCH http://localhost:8080/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+Content-Type: application/json
+
+{
+  "name": "Lakers Changed",
+  "city": "Los Angeles",
+  "coach": "Guss",
+  "noOfChampionships": 20
+}
+
+### Delete Player
+DELETE http://localhost:8080/api/players/f08ef7e3-7f2a-4378-b1fb-2922d730c70d
+
+### Delete Team
+DELETE http://localhost:8080/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76

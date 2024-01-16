@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="NBA_ISA_Project" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="NBA" target="18" />
+      <module name="NBA_ISA_Project_Lab2" target="17" />
+      <module name="NBA_ISA_Project_Lab2 (1)" target="17" />
+      <module name="player" target="1.5" />
+      <module name="team" target="1.5" />
+      <module name="untitled" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NBA_ISA_Project" options="-parameters" />
+      <module name="NBA_ISA_Project_Lab2" options="-parameters" />
+      <module name="NBA_ISA_Project_Lab2 (1)" options="-parameters" />
+      <module name="player" options="" />
+      <module name="team" options="" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>

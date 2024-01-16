@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0fc3a497-b3e7-4b61-9593-4da7826a146d" name="Changes" comment="Lab 4 start" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lab3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;janekludwicki&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="542f1fc3-39fc-42af-8345-486434786ca9" />
+        <option name="url" value="https://github.com/janekludwicki/NBA_ISA_Project.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ZJUKeSuHR3WQGxeHiFu0UUp7zM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.NbaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in http-requests-log.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Add Jaylen Brown to Los Angeles Lakers.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Change players info.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Change team's info.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create new player.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create new shop.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete Player.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete Team.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get all players.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get nonexistent player.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get nonexistent team.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get team's players.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in NBA_ISA_Project_Lab2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in NBA_ISA_Project_Lab2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in player.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in team.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.NbaApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NbaApplication (2).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NbaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PlayerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lab4&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/janek/IdeaProjects/NBA_ISA_Project/ISA/NBA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\ISA\NBA_player" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\ISA\NBA_team" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\team" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\player" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\NBA_modules" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\ISA\NBA" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\ISA" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\NBA_project\NBA" />
+      <recent name="C:\Users\janek\IdeaProjects\NBA_ISA_Project\NBA_Project" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.NbaApplication">
+    <configuration name="All in NBA_ISA_Project_Lab2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBA_ISA_Project_Lab2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in NBA_ISA_Project_Lab2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBA_ISA_Project_Lab2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="NBA_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="NBA_Project" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NbaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="NBA_ISA_Project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.NbaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in NBA_ISA_Project_Lab2 (1)" />
+        <item itemvalue="JUnit.All in NBA_ISA_Project_Lab2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-3183f394aec4-38982a12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fc3a497-b3e7-4b61-9593-4da7826a146d" name="Changes" comment="" />
+      <created>1702139614653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702139614653</updated>
+      <workItem from="1702139618734" duration="667000" />
+      <workItem from="1702140395773" duration="8443000" />
+      <workItem from="1702208501014" duration="7393000" />
+      <workItem from="1702216469645" duration="208000" />
+      <workItem from="1702216722663" duration="114000" />
+      <workItem from="1702216874932" duration="816000" />
+      <workItem from="1702217700927" duration="49000" />
+      <workItem from="1702217766085" duration="1460000" />
+      <workItem from="1702219507802" duration="238000" />
+      <workItem from="1702220107408" duration="379000" />
+      <workItem from="1702220491489" duration="206000" />
+      <workItem from="1702220727231" duration="6815000" />
+      <workItem from="1702228040263" duration="226000" />
+    </task>
+    <task id="LOCAL-00001" summary="Controllery działają">
+      <option name="closed" value="true" />
+      <created>1702143221372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702143221372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Controllery działają">
+      <option name="closed" value="true" />
+      <created>1702143918269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702143918269</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lab 3 done">
+      <option name="closed" value="true" />
+      <created>1702153357839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702153357839</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Lab4" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Controllery działają" />
+    <MESSAGE value="Lab 3 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 3 done" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

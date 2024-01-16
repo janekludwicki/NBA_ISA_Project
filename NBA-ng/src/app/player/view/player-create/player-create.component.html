@@ -1,0 +1,44 @@
+<article *ngIf="player">
+  <header>
+    <h2>Create Player</h2>
+  </header>
+  <form class="form" #form='ngForm' (ngSubmit)="onSubmit()">
+<    <div class="row">
+    <div class="col-4 p-2">
+      <div>
+        <label for="id">ID:</label>
+        <input id="id" name="id" [(ngModel)]="player.id"/>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-4 p-2">
+        <div>
+          <label for="name">Name:</label>
+          <input id="name" name="name" [(ngModel)]="player.name"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 p-2">
+        <div>
+          <label for="surname">Surname:</label>
+          <input id="surname" name="surname" [(ngModel)]="player.surname"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 p-2">
+        <div>
+          <label for="playerId">Shop ID:</label>
+          <input id="playerId" name="shopId" [(ngModel)]="player.teamId"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2 p-2">
+        <button type="submit">Create</button>
+      </div>
+    </div>
+  </form>
+</article>
