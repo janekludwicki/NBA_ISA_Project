@@ -14,11 +14,11 @@ export class TeamListComponent implements OnInit{
 
   teams: Teams | undefined;
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.teamService.getTeams().subscribe(teams=>this.teams= teams)
   }
 
-  onDelete(team: Team): void {
+  onDelete(team:Team) {
     this.teamService.deleteTeam(team.id).subscribe(()=>this.ngOnInit());
   }
 

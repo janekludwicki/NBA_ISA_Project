@@ -18,7 +18,7 @@ export class TeamService {
     return this.http.get<Teams>('/api/teams');
   }
 
-  deleteTeam(uuid: string): Observable<any> {
+  deleteTeam(uuid:string): Observable<any> {
     return this.http.delete<Team>(`/api/teams/${uuid}`);
   }
 

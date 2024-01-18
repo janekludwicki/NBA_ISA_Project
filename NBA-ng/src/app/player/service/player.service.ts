@@ -21,7 +21,7 @@ export class PlayerService {
   }
 
   getPlayersByTeam(uuid:string): Observable<Players>{
-    return this.http.get<Players>(`api/teams/${uuid}/players`);
+    return this.http.get<Players>(`/api/teams/${uuid}/players`);
   }
 
   deletePlayer(uuid:string): Observable<any> {

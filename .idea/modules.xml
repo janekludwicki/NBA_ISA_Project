@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/NBA-ng/NBA-ng.iml" filepath="$PROJECT_DIR$/NBA-ng/NBA-ng.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/NBA_ISA_Project-Lab4.iml" filepath="$PROJECT_DIR$/.idea/NBA_ISA_Project-Lab4.iml" />
     </modules>
   </component>

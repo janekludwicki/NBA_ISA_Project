@@ -6,9 +6,9 @@ describe('TeamListComponent', () => {
   let component: TeamListComponent;
   let fixture: ComponentFixture<TeamListComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [TeamListComponent]
+  beforeEach( () => {
+    TestBed.configureTestingModule({
+      declarations: [TeamListComponent]
     })
     .compileComponents();
     
