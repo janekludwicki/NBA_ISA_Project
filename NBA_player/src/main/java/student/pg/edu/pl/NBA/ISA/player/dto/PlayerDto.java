@@ -13,7 +13,7 @@ public class PlayerDto implements Comparable<PlayerDto>{
     private String surname;
     private Integer age;
     private Integer jerseyNo;
-    private Integer Height;
+    private Integer height;
     private String position;
     private String Team;
 
@@ -27,7 +27,7 @@ public class PlayerDto implements Comparable<PlayerDto>{
                 "surname='" + surname + '\'' +
                 "age='" + age + '\'' +
                 "jersey number='" + jerseyNo + '\'' +
-                "height='" + Height + '\'' +
+                "height='" + height + '\'' +
                 "position='" + position + '\'' +
                 "team='" + Team + '}';
     }

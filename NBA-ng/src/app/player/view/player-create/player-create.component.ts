@@ -11,7 +11,7 @@ import {ActivatedRoute, Route, Router} from "@angular/router";
 export class PlayerCreateComponent implements OnInit{
 
   id:string |undefined;
-  player: PlayerForm = {id: "", name:'', surname:'', yearOfBirth:0, Height:15, jerseyNo:69, position:'', teamID:''}
+  player: PlayerForm = {id: "", name:'', surname:'', yearOfBirth:0, height:15, jerseyNo:69, position:'', teamID:''}
 
   constructor( private playerService: PlayerService,
                private route:ActivatedRoute,
@@ -24,6 +24,6 @@ export class PlayerCreateComponent implements OnInit{
 
   onSubmit():void{
     this.playerService.putPlayer(this.player.id!, this.player!)
-      .subscribe(()=>this.router.navigate([`teams/${this.player.teamID}/players`]));
+      .subscribe(()=>this.router.navigate([`teams/${this.player.teamID}`]));
   }
 }

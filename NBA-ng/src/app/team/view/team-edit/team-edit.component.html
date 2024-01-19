@@ -1,1 +1,58 @@
-<p>team-edit works!</p>
+<article *ngIf="team">
+    <header>
+        <h2>Edit Team</h2>
+    </header>
+
+    <form class="form" #form='ngForm' (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="id">ID:</label>
+                    <input id="id" name="id" [(ngModel)]="team.id"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" [(ngModel)]="team.name"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="city">Name:</label>
+                    <input id="city" name="city" [(ngModel)]="team.city"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="coach">Name:</label>
+                    <input id="coach" name="coach" [(ngModel)]="team.coach"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="noOfChampionships">Name:</label>
+                    <input id="noOfChampionships" name="noOfChampionships" [(ngModel)]="team.noOfChampionships"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 p-2">
+                <button type="submit">Update</button>
+            </div>
+            <div class="col-2 p-2">
+                <button type="button" (click)="form.resetForm(originalTeam)">Reset</button>
+            </div>
+        </div>
+    </form>
+</article>
+

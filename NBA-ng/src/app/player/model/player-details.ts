@@ -7,7 +7,7 @@ export interface PlayerDetails{
   surname:string;
   yearOfBirth:number;
   jerseyNo:number;
-  Height:number;
+  height:number;
   position:string;
   team:Team;
 }

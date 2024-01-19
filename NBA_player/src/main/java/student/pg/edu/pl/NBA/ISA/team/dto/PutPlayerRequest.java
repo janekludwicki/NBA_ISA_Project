@@ -12,5 +12,5 @@ import java.util.UUID;
 @ToString
 @EqualsAndHashCode
 public class PutPlayerRequest {
-    private UUID playerID;
+    private UUID id;
 }

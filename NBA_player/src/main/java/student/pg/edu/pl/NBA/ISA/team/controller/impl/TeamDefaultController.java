@@ -32,7 +32,7 @@ public class TeamDefaultController implements TeamController {
 
     @Override
     public void putPlayer(UUID teamID, PutPlayerRequest request) {
-        teamService.findById(teamID).ifPresent(team -> playerService.findById(request.getPlayerID()).ifPresentOrElse(
+        teamService.findById(teamID).ifPresent(team -> playerService.findById(request.getId()).ifPresentOrElse(
                 player -> {
                     player.setTeam(team);
                     playerService.addPlayer(player);

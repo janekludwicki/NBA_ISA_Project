@@ -29,14 +29,14 @@ public class Player implements Comparable<Player>, Serializable {
     @Column(name="jersey_no")
     private Integer jerseyNo;
     @Column(name="height")
-    private Integer Height;
+    private Integer height;
     private String position;
     @ManyToOne
     @JoinColumn(name = "team")
     private Team team;
 
     @Override
-    public int hashCode() { return Objects.hash(playerID, name, surname, yearOfBirth, jerseyNo, Height, position, team); }
+    public int hashCode() { return Objects.hash(playerID, name, surname, yearOfBirth, jerseyNo, height, position, team); }
 
     @Override
     public boolean equals(Object o) {
@@ -48,7 +48,7 @@ public class Player implements Comparable<Player>, Serializable {
                 Objects.equals(surname, player.surname) &&
                 Objects.equals(yearOfBirth, player.yearOfBirth) &&
                 Objects.equals(jerseyNo, player.jerseyNo) &&
-                Objects.equals(Height, player.Height) &&
+                Objects.equals(height, player.height) &&
                 Objects.equals(position, player.position) &&
                 Objects.equals(team, player.team);
     }
@@ -64,7 +64,7 @@ public class Player implements Comparable<Player>, Serializable {
                 "surname='" + surname + '\'' +
                 "age='" + yearOfBirth + '\'' +
                 "jersey number='" + jerseyNo + '\'' +
-                "height='" + Height + '\'' +
+                "height='" + height + '\'' +
                 "position='" + position + '\'' +
                 '}';
     }

@@ -46,7 +46,7 @@ public class DataInitializer implements InitializingBean {
                 .surname("James")
                 .yearOfBirth(1984)
                 .jerseyNo(23)
-                .Height(206)
+                .height(206)
                 .position("SF")
                 .team(LakersTeam)
                 .build();
@@ -59,7 +59,7 @@ public class DataInitializer implements InitializingBean {
                 .surname("Davis")
                 .yearOfBirth(1993)
                 .jerseyNo(3)
-                .Height(208)
+                .height(208)
                 .position("PF/C")
                 .team(LakersTeam)
                 .build();
@@ -72,7 +72,7 @@ public class DataInitializer implements InitializingBean {
                 .surname("Tatum")
                 .yearOfBirth(1993)
                 .jerseyNo(0)
-                .Height(203)
+                .height(203)
                 .position("SF")
                 .team(CelticsTeam)
                 .build();
@@ -85,7 +85,7 @@ public class DataInitializer implements InitializingBean {
                 .surname("Brown")
                 .yearOfBirth(1996)
                 .jerseyNo(7)
-                .Height(198)
+                .height(198)
                 .position("SG")
                 .team(CelticsTeam)
                 .build();

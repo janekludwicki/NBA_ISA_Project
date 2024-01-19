@@ -15,7 +15,7 @@ public class TeamsToResponseFunction implements Function<List<Team>, GetTeamsRes
         return GetTeamsResponse.builder()
                 .teams(teams.stream()
                         .map(team -> GetTeamsResponse.Team.builder()
-                                .teamID(team.getTeamID())
+                                .id(team.getTeamID())
                                 .name(team.getName())
                                 .city(team.getCity())
                                 .coach(team.getCoach())

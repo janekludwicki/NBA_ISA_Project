@@ -13,7 +13,7 @@ import java.util.UUID;
 @EqualsAndHashCode
 public class GetTeamResponse {
 
-    private UUID teamID;
+    private UUID id;
 
     private String name;
 

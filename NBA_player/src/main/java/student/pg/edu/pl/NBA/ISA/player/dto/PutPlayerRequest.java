@@ -21,7 +21,7 @@ public class PutPlayerRequest {
 
     private Integer jerseyNo;
 
-    private Integer Height;
+    private Integer height;
 
     private String position;
 

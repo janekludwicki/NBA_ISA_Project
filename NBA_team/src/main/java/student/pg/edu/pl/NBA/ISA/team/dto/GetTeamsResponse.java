@@ -22,7 +22,7 @@ public class GetTeamsResponse {
     @ToString
     @EqualsAndHashCode
     public static class Team {
-        private UUID teamID;
+        private UUID id;
         private String name;
         private String city;
         private String coach;

@@ -4,7 +4,7 @@ export interface PlayerForm {
   surname:string;
   yearOfBirth:number;
   jerseyNo:number;
-  Height:number;
+  height:number;
   position:string;
   teamID:string;
 }

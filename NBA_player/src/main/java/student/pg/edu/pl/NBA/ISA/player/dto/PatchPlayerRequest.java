@@ -20,9 +20,9 @@ public class PatchPlayerRequest {
 
     private Integer jerseyNo;
 
-    private Integer Height;
+    private Integer height;
 
     private String position;
 
-    private UUID shopID;
+    private UUID teamID;
 }

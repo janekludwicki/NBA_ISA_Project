@@ -29,7 +29,7 @@ public class RequestToPlayerFunction implements BiFunction<UUID, PutPlayerReques
                 .surname(request.getSurname())
                 .yearOfBirth(request.getYearOfBirth())
                 .jerseyNo(request.getJerseyNo())
-                .Height(request.getHeight())
+                .height(request.getHeight())
                 .position(request.getPosition())
                 .team(team.orElse(null))
                 .build();

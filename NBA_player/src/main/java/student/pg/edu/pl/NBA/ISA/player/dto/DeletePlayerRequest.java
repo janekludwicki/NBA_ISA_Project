@@ -9,5 +9,5 @@ import java.util.UUID;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor
 public class DeletePlayerRequest {
-    private UUID playerID;
+    private UUID id;
 }

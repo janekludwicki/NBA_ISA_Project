@@ -29,7 +29,7 @@ export class PlayerEditComponent implements OnInit{
               surname: player.surname,
               yearOfBirth: player.yearOfBirth,
               jerseyNo: player.jerseyNo,
-              Height: player.Height,
+              height: player.height,
               position: player.position,
               teamID: params['teamID']
             }
@@ -40,7 +40,7 @@ export class PlayerEditComponent implements OnInit{
   onSubmit():void{
     this.playerService.putPlayer(this.uuid!, this.player!)
         .subscribe(
-            ()=>this.router.navigate([`/teams/${this.player?.teamID}/players`])
+            ()=>this.router.navigate([`/teams/${this.player?.teamID}`])
         )
   }
 }

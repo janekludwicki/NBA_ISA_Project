@@ -6,7 +6,7 @@ import {MainComponent} from "./components/main/main.component";
 import {NavComponent} from "./components/nav/nav.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {FooterComponent} from "./components/footer/footer.component";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {TeamListComponent} from "./team/view/team-list/team-list.component";
 import {TeamViewComponent} from "./team/view/team-view/team-view.component";
@@ -26,7 +26,7 @@ import {PlayerEditComponent} from "./player/view/player-edit/player-edit.compone
     TeamViewComponent,
     TeamListComponent,
     TeamCreateComponent,
-    //TeamEditComponent,
+    TeamEditComponent,
     PlayerViewComponent,
     PlayerListComponent,
     PlayerEditComponent,

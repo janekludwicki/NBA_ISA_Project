@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import {Teams} from "../../model/teams";
 import {Team} from "../../model/team";
 import {TeamService} from "../../service/team.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 
 @Component({
@@ -10,7 +11,9 @@ import {TeamService} from "../../service/team.service";
   styleUrl: './team-list.component.css'
 })
 export class TeamListComponent implements OnInit{
-  constructor(private teamService: TeamService) {}
+  constructor(private teamService: TeamService,
+  private route: ActivatedRoute,
+  private router: Router) {}
 
   teams: Teams | undefined;
 

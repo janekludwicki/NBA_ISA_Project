@@ -3,12 +3,10 @@ import { AppComponent } from './app.component';
 import {RouterTestingModule} from "@angular/router/testing";
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach( () => TestBed.configureTestingModule({
       imports:[RouterTestingModule],
-      declarations: [AppComponent],
-    }).compileComponents();
-  });
+      declarations: [AppComponent]
+    }));
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -26,6 +24,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, NBA-ng');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, NBA-ng is running');
   });
 });

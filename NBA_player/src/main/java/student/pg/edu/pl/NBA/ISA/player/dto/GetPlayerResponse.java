@@ -35,7 +35,7 @@ public class GetPlayerResponse {
 
     private Integer jerseyNo;
 
-    private Integer Height;
+    private Integer height;
 
     private String position;
 
