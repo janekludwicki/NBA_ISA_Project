@@ -1,5 +1,74 @@
-<article>
-  <header><h2>Teams</h2></header>
-
-  <table></table>
+<article *ngIf="player">
+  <header><h2>Edit Player</h2></header>
+    <form class="form" #form='ngForm' (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="id">ID:</label>
+                    <input id="id" name="id" [(ngModel)]="player.id"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" [(ngModel)]="player.name"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input id="surname" name="surname" [(ngModel)]="player.surname"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="yearOfBirth">Year of Birth:</label>
+                    <input id="yearOfBirth" name="yearOfBirth" [(ngModel)]="player.yearOfBirth"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="jerseyNo">Jersey number:</label>
+                    <input id="jerseyNo" name="jerseyNo" [(ngModel)]="player.jerseyNo"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="Height">Height:</label>
+                    <input id="Height" name="Height" [(ngModel)]="player.Height"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="position">Position:</label>
+                    <input id="position" name="position" [(ngModel)]="player.position"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="teamId">Team ID:</label>
+                    <input id="teamId" name="teamId" [(ngModel)]="player.teamID"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 p-2">
+                <button type="submit">Edit</button>
+            </div>
+        </div>
+    </form>
 </article>

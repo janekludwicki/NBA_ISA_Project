@@ -15,7 +15,7 @@ export class PlayerListComponent implements OnInit{
   players: Players |undefined;
 
   ngOnInit() {
-    this.playerService.getPlayers().subscribe(players=>(this.players = players));
+    this.playerService.getPlayers().subscribe(players=>{this.players = players});
   }
 
   onDelete(player:Player) {

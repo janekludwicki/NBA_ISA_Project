@@ -5,7 +5,6 @@ import {TeamDetails} from "../model/team-details";
 import {Team} from "../model/team";
 import {TeamForm} from "../model/team-form";
 import {HttpClient} from "@angular/common/http";
-import {Players} from "../../player/model/players";
 
 @Injectable({
   providedIn: 'root'
@@ -14,12 +13,12 @@ export class TeamService {
 
   constructor(private http: HttpClient) { }
 
-  getTeams(): Observable<Teams> {
+  getTeams(): Observable<Teams>{
     return this.http.get<Teams>('/api/teams');
   }
 
   deleteTeam(uuid:string): Observable<any> {
-    return this.http.delete<Team>(`/api/teams/${uuid}`);
+    return this.http.delete(`/api/teams/${uuid}`);
   }
 
   getTeam(uuid:string): Observable<TeamDetails> {

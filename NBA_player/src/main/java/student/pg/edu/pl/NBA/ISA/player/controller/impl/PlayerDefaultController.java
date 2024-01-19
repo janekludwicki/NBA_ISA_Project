@@ -52,10 +52,10 @@ public class PlayerDefaultController implements PlayerController {
     }
 
     @Override
-    public void putPlayer(PutPlayerRequest request) {
+    public void putPlayer(UUID id, PutPlayerRequest request) {
         Optional<Team> team = teamService.findById(request.getTeamID());
         if(team.isPresent()) {
-            Player player = requestToPlayerFunction.apply(request);
+            Player player = requestToPlayerFunction.apply(id, request);
             playerService.addPlayer(player);
             return;
         }

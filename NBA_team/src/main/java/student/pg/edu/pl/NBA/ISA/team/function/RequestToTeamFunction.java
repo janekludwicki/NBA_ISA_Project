@@ -5,15 +5,16 @@ import student.pg.edu.pl.NBA.ISA.team.dto.PutTeamRequest;
 import student.pg.edu.pl.NBA.ISA.team.entity.Team;
 
 import java.util.UUID;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 @Component
-public class RequestToTeamFunction implements Function<PutTeamRequest, Team> {
+public class RequestToTeamFunction implements BiFunction<UUID, PutTeamRequest, Team> {
 
     @Override
-    public Team apply(PutTeamRequest request) {
+    public Team apply(UUID id, PutTeamRequest request) {
         return Team.builder()
-                .teamID(UUID.randomUUID())
+                .teamID(id)
                 .name(request.getName())
                 .city(request.getCity())
                 .coach(request.getCoach())

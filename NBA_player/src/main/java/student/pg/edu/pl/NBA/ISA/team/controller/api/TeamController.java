@@ -9,13 +9,6 @@ import java.util.UUID;
 @RequestMapping("/api")
 public interface TeamController {
 
-        @PostMapping("/teams")
-        @ResponseStatus(HttpStatus.CREATED)
-        void putTeam(
-                @RequestBody
-                PutTeamRequest request
-        );
-
         @PutMapping("/teams/{teamID}/players")
         @ResponseStatus(HttpStatus.OK)
         void putPlayer(
@@ -23,6 +16,15 @@ public interface TeamController {
                 UUID playerID,
                 @RequestBody
                 PutPlayerRequest request
+        );
+
+        @PutMapping("/teams/{id}")
+        @ResponseStatus(HttpStatus.ACCEPTED)
+        void putTeam(
+                @PathVariable("id")
+                UUID id,
+                @RequestBody
+                PutTeamRequest request
         );
 
         @DeleteMapping("/teams/{id}")

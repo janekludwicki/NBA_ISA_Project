@@ -37,8 +37,8 @@ public class TeamDefaultController implements TeamController {
     }
 
     @Override
-    public void putTeam(PutTeamRequest request) {
-        Team team = requestToTeamFunction.apply(request);
+    public void putTeam(UUID id, PutTeamRequest request) {
+        Team team = requestToTeamFunction.apply(id, request);
         teamService.addTeam(team);
     }
 

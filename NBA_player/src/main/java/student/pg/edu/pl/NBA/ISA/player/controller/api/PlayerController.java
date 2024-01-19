@@ -30,9 +30,11 @@ public interface PlayerController {
             UUID id
     );
 
-    @PostMapping("/players")
+    @PutMapping ("/players/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     void putPlayer(
+            @PathVariable("id")
+            UUID id,
             @RequestBody
             PutPlayerRequest request
     );

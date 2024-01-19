@@ -23,13 +23,13 @@ import {PlayerEditComponent} from "./player/view/player-edit/player-edit.compone
     NavComponent,
     HeaderComponent,
     FooterComponent,
-    //TeamViewComponent,
+    TeamViewComponent,
     TeamListComponent,
     TeamCreateComponent,
     //TeamEditComponent,
-    //PlayerViewComponent,
+    PlayerViewComponent,
     PlayerListComponent,
-    //PlayerEditComponent,
+    PlayerEditComponent,
     PlayerCreateComponent
   ],
   imports: [

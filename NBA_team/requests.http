@@ -8,7 +8,7 @@ GET http://localhost:8082/api/teams/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
 GET http://localhost:8082/api/teams/f08ef7e3-7f2a-4378-b1fb-2922d730c70d
 
 ### Create new shop
-POST http://localhost:8082/api/teams
+PUT http://localhost:8082/api/teams
 Content-Type: application/json
 
 {

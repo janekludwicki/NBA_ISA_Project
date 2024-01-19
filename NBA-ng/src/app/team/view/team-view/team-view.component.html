@@ -1,1 +1,15 @@
-<p>team-view works!</p>
+<article *ngIf="team">
+    <p>ID: {{team.id}}</p>
+    <p>Name: {{team.name}}</p>
+    <p>City: {{team.city}}</p>
+    <p>Coach: {{team.coach}}</p>
+    <p>Number of championships: {{team.noOfChampionships}}</p>
+    <p *ngFor="let player of team.players">
+        {{player.id}} <br/>
+        {{player.name}}
+        <a [routerLink]="['players', player.id]">View</a>
+        <button (click)="deletePlayer(player.id)">Delete Player</button>
+    </p>
+    <a [routerLink]="['players/create']">Create new player</a> <br/>
+</article>
+

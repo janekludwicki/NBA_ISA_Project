@@ -22,9 +22,11 @@ public interface TeamController {
                 UUID id
         );
 
-        @PostMapping("/teams")
+        @PutMapping("/teams/{id}")
         @ResponseStatus(HttpStatus.CREATED)
         void putTeam(
+                @PathVariable("id")
+                UUID id,
                 @RequestBody
                 PutTeamRequest request
         );

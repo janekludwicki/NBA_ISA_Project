@@ -8,7 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   templateUrl: './team-create.component.html',
   styleUrl: './team-create.component.css'
 })
-export class TeamCreateComponent /*implements OnInit*/{
+export class TeamCreateComponent{
   uuid:string | undefined;
   team: TeamForm = {id:'', name:'', city:'', coach:'', noOfChampionships:0}
 

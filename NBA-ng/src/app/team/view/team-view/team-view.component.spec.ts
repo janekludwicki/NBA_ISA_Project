@@ -6,11 +6,10 @@ describe('TeamViewComponent', () => {
   let component: TeamViewComponent;
   let fixture: ComponentFixture<TeamViewComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [TeamViewComponent]
-    })
-    .compileComponents();
+  beforeEach( () => {
+     TestBed.configureTestingModule({
+      declarations: [TeamViewComponent]
+    });
     
     fixture = TestBed.createComponent(TeamViewComponent);
     component = fixture.componentInstance;

@@ -1,1 +1,11 @@
-<p>player-view works!</p>
+<article *ngIf="player">
+    <p>ID: {{player.id}}</p>
+    <p>Name: {{player.name}}</p>
+    <p>Surname: {{player.surname}}</p>
+    <p>Year of Birth: {{player.yearOfBirth}}</p>
+    <p>Jersey Number: {{player.jerseyNo}}</p>
+    <p>Height: {{player.Height}}</p>
+    <p>Position: {{player.position}}</p>
+    <p>Team: {{player.team.name}}</p>
+    <a [routerLink]="['edit']">Edit</a>
+</article>

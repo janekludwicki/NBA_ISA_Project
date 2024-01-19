@@ -25,7 +25,7 @@ Content-Type: application/json
 }
 
 ### Create new shop
-POST http://localhost:8081/api/teams
+PUT http://localhost:8081/api/teams
 Content-Type: application/json
 
 {
