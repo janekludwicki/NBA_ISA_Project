@@ -31,7 +31,7 @@ export class PlayerEditComponent implements OnInit{
               jerseyNo: player.jerseyNo,
               height: player.height,
               position: player.position,
-              teamID: params['teamID']
+              teamID: player.team.id
             }
             this.original = {...this.player};
           });
