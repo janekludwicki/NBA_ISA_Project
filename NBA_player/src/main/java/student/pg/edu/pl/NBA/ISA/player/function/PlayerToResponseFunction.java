@@ -12,7 +12,7 @@ public class PlayerToResponseFunction implements Function<Player, GetPlayerRespo
     @Override
     public GetPlayerResponse apply(Player entity) {
         return GetPlayerResponse.builder()
-                .id(entity.getPlayerID())
+                .id(entity.getId())
                 .name(entity.getName())
                 .surname(entity.getSurname())
                 .yearOfBirth(entity.getYearOfBirth())
@@ -20,7 +20,7 @@ public class PlayerToResponseFunction implements Function<Player, GetPlayerRespo
                 .height(entity.getHeight())
                 .position(entity.getPosition())
                 .Team(GetPlayerResponse.Team.builder()
-                        .id(entity.getTeam().getTeamID())
+                        .id(entity.getTeam().getId())
                 .build())
         .build();
     }

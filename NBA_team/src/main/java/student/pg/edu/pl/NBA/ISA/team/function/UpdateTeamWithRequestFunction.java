@@ -12,7 +12,7 @@ public class UpdateTeamWithRequestFunction implements BiFunction<Team, PatchTeam
     @Override
     public Team apply(Team entity, PatchTeamRequest request) {
         return Team.builder()
-                .teamID(entity.getTeamID())
+                .id(entity.getId())
                 .name(request.getName())
                 .city(request.getCity())
                 .coach(request.getCoach())

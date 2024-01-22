@@ -13,7 +13,7 @@ public interface TeamController {
         @ResponseStatus(HttpStatus.OK)
         void putPlayer(
                 @PathVariable("teamID")
-                UUID playerID,
+                UUID teamID,
                 @RequestBody
                 PutPlayerRequest request
         );

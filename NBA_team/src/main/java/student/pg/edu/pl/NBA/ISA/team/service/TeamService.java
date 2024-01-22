@@ -30,7 +30,7 @@ public class TeamService {
 
     public void remove(Team team) {
        teamRepository.delete(team);
-       teamEventRepository.delete(team.getTeamID());
+       teamEventRepository.delete(team.getId());
    }
 
     public Optional<Team> findByName(String teamName) {
@@ -38,7 +38,7 @@ public class TeamService {
     }
 
     public void update (Team team){
-            teamRepository.findById(team.getTeamID()).ifPresent(
+            teamRepository.findById(team.getId()).ifPresent(
                     team2BUpdated -> {
                         team2BUpdated.setName(team.getName());
                         team2BUpdated.setCoach(team.getCoach());

@@ -20,8 +20,8 @@ import java.util.UUID;
 @Table(name = "teams")
 public class Team implements Serializable {
     @Id
-    @Column(name="team_id")
-    private UUID teamID;
+    @Column(name="id")
+    private UUID id;
     @OneToMany(mappedBy = "team", cascade = CascadeType.REMOVE)
     @Setter(AccessLevel.NONE)
     @Builder.Default

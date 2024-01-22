@@ -41,7 +41,7 @@ public class PlayerService {
     }
 
     public void update(Player player) {
-        playerRepository.findById(player.getPlayerID()).ifPresent(
+        playerRepository.findById(player.getId()).ifPresent(
                 player2BUpdated -> {
                     player2BUpdated.setName(player.getName());
                     player2BUpdated.setSurname(player.getSurname());

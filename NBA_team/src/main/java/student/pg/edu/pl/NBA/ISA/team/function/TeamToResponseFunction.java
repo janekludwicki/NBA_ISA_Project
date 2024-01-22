@@ -12,7 +12,7 @@ public class TeamToResponseFunction implements Function<Team, GetTeamResponse> {
     @Override
     public GetTeamResponse apply(Team team) {
         return GetTeamResponse.builder()
-                .id(team.getTeamID())
+                .id(team.getId())
                 .name(team.getName())
                 .city(team.getCity())
                 .coach(team.getCoach())

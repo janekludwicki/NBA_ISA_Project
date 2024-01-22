@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  nba-ng:
+    image: nba-ng:1.0.0-SNAPSHOT
+    #    build:
+    #      context: ./module-ng
+    #      dockerfile: Dockerfile
+    restart: always
+    environment:
+      API_URL: http://gateway:8080/api
+    ports:
+      - "8086:80"
+
+  h2database-nba_team:
+    image: oscarfonts/h2
+    restart: always
+    environment:
+      H2_OPTIONS: -ifNotExists
+
+  h2database-nba_player:
+    image: oscarfonts/h2
+    restart: always
+    environment:
+      H2_OPTIONS: -ifNotExists
+
+  nba_player:
+    image: nba_player:1.0.0-SNAPSHOT
+    restart: always
+    depends_on:
+      - h2database-nba_player
+    healthcheck:
+      test: curl -f http://localhost:8080/api/players || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    environment:
+        SPRING_DATASOURCE_URL: jdbc:h2:tcp://h2database-nba_player:1521/nba_player
+
+  nba_team:
+    image: nba_team:1.0.0-SNAPSHOT
+    restart: always
+    depends_on:
+      h2database-nba_team:
+        condition: service_started
+    environment:
+      PLAYER_URL: "http://nba_player:8080"
+      SPRING_DATASOURCE_URL: jdbc:h2:tcp://h2database-nba_team:1521/nba_team
+
+  gateway:
+    image: gateway:1.0.0-SNAPSHOT
+    restart: always
+    environment:
+      NBA_PLAYER_URL: "http://nba_player:8080"
+      NBA_TEAM_URL: "http://nba_team:8080"
+      GATEWAY_HOST: "gateway:8080"
+    ports:
+      - "8080:8080"

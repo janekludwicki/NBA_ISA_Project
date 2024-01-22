@@ -23,7 +23,7 @@ public class InitializeData implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
         if (teamService.findAll().isEmpty()) {
             Team CelticsTeam = Team.builder()
-                    .teamID(UUID.fromString("5d1da2ae-6a14-4b6d-8b4f-d117867118d4"))
+                    .id(UUID.fromString("5d1da2ae-6a14-4b6d-8b4f-d117867118d4"))
                     .name("Celtics")
                     .city("Boston")
                     .coach("Joe Mazzulla")
@@ -33,7 +33,7 @@ public class InitializeData implements InitializingBean {
             teamService.addTeam(CelticsTeam);
 
             Team LakersTeam = Team.builder()
-                    .teamID(UUID.fromString("f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"))
+                    .id(UUID.fromString("f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"))
                     .name("Lakers")
                     .city("Los Angeles")
                     .coach("Darvin Ham")

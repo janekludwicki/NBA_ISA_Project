@@ -12,7 +12,7 @@ public class UpdatePlayerWithRequestFunction implements BiFunction<Player, Patch
     @Override
     public Player apply(Player entity, PatchPlayerRequest request) {
         return Player.builder()
-                .playerID(entity.getPlayerID())
+                .id(entity.getId())
                 .name(request.getName())
                 .surname(request.getSurname())
                 .yearOfBirth(request.getYearOfBirth())

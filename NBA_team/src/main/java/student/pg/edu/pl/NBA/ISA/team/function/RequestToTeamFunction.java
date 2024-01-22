@@ -14,7 +14,7 @@ public class RequestToTeamFunction implements BiFunction<UUID, PutTeamRequest, T
     @Override
     public Team apply(UUID id, PutTeamRequest request) {
         return Team.builder()
-                .teamID(id)
+                .id(id)
                 .name(request.getName())
                 .city(request.getCity())
                 .coach(request.getCoach())

@@ -20,13 +20,13 @@ import java.util.UUID;
 //@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Player implements Comparable<Player>, Serializable {
     @Id
-    @Column(name="player_id")
-    private UUID playerID;
+    @Column(name="id")
+    private UUID id;
     private String name;
     private String surname;
     @Column(name="year_of_birth")
     private Integer yearOfBirth;
-    @Column(name="jersey_no")
+    @Column(name="jersey_number")
     private Integer jerseyNo;
     @Column(name="height")
     private Integer height;
@@ -36,14 +36,14 @@ public class Player implements Comparable<Player>, Serializable {
     private Team team;
 
     @Override
-    public int hashCode() { return Objects.hash(playerID, name, surname, yearOfBirth, jerseyNo, height, position, team); }
+    public int hashCode() { return Objects.hash(id, name, surname, yearOfBirth, jerseyNo, height, position, team); }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o ==null || getClass() !=  o.getClass()) return false;
         Player player = (Player) o;
-        return Objects.equals(playerID, player.playerID) &&
+        return Objects.equals(id, player.id) &&
                 Objects.equals(name, player.name) &&
                 Objects.equals(surname, player.surname) &&
                 Objects.equals(yearOfBirth, player.yearOfBirth) &&
@@ -54,12 +54,12 @@ public class Player implements Comparable<Player>, Serializable {
     }
 
     @Override
-    public int compareTo(Player other) { return this.playerID.compareTo(other.playerID); }
+    public int compareTo(Player other) { return this.id.compareTo(other.id); }
 
     @Override
     public String toString() {
         return "NBA_Player{" +
-                "playerID='" + playerID + '\'' +
+                "playerID='" + id + '\'' +
                 "name='" + name + '\'' +
                 "surname='" + surname + '\'' +
                 "age='" + yearOfBirth + '\'' +

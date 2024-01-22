@@ -24,7 +24,7 @@ public class RequestToPlayerFunction implements BiFunction<UUID, PutPlayerReques
     public Player apply(UUID id, PutPlayerRequest request) {
         Optional<Team> team = teamService.findById(request.getTeamID());
         return Player.builder()
-                .playerID(id)
+                .id(id)
                 .name(request.getName())
                 .surname(request.getSurname())
                 .yearOfBirth(request.getYearOfBirth())

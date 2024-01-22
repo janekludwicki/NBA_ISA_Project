@@ -29,19 +29,19 @@ public class DataInitializer implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
 
         Team LakersTeam = Team.builder()
-                .teamID(UUID.fromString("f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"))
+                .id(UUID.fromString("f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"))
                 .build();
 
         teamService.addTeam(LakersTeam);
 
         Team CelticsTeam = Team.builder()
-                .teamID(UUID.fromString("5d1da2ae-6a14-4b6d-8b4f-d117867118d4"))
+                .id(UUID.fromString("5d1da2ae-6a14-4b6d-8b4f-d117867118d4"))
                 .build();
 
         teamService.addTeam(CelticsTeam);
 
         Player LebronJames = Player.builder()
-                .playerID(UUID.fromString("2d9b1e8c-67c5-4188-a911-5f064a63d8cd"))
+                .id(UUID.fromString("2d9b1e8c-67c5-4188-a911-5f064a63d8cd"))
                 .name("Lebron")
                 .surname("James")
                 .yearOfBirth(1984)
@@ -54,7 +54,7 @@ public class DataInitializer implements InitializingBean {
         playerService.addPlayer(LebronJames);
 
         Player AnthonyDavis = Player.builder()
-                .playerID(UUID.fromString("525d3e7b-bb1f-4c13-bf17-926d1a12e4c0"))
+                .id(UUID.fromString("525d3e7b-bb1f-4c13-bf17-926d1a12e4c0"))
                 .name("Anthony")
                 .surname("Davis")
                 .yearOfBirth(1993)
@@ -67,7 +67,7 @@ public class DataInitializer implements InitializingBean {
         playerService.addPlayer(AnthonyDavis);
 
         Player JaysonTatum = Player.builder()
-                .playerID(UUID.fromString("cc0b0577-bb6f-45b7-81d6-3db88e6ac19f"))
+                .id(UUID.fromString("cc0b0577-bb6f-45b7-81d6-3db88e6ac19f"))
                 .name("Jayson")
                 .surname("Tatum")
                 .yearOfBirth(1993)
@@ -80,7 +80,7 @@ public class DataInitializer implements InitializingBean {
         playerService.addPlayer(JaysonTatum);
 
         Player JaylenBrown = Player.builder()
-                .playerID(UUID.fromString("f08ef7e3-7f2a-4378-b1fb-2922d730c70d"))
+                .id(UUID.fromString("f08ef7e3-7f2a-4378-b1fb-2922d730c70d"))
                 .name("Jaylen")
                 .surname("Brown")
                 .yearOfBirth(1996)

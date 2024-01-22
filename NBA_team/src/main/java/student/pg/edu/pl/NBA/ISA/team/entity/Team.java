@@ -20,8 +20,8 @@ import java.util.UUID;
 @Table(name = "teams")
 public class Team implements Comparable<Team>, Serializable {
     @Id
-    @Column(name="team_id")
-    private UUID teamID;
+    @Column(name="id")
+    private UUID id;
     private String name;
     private String city;
     private String coach;
@@ -30,7 +30,7 @@ public class Team implements Comparable<Team>, Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(teamID, name, city, coach, noOfChampionships);
+        return Objects.hash(id, name, city, coach, noOfChampionships);
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Team implements Comparable<Team>, Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Team team = (Team) o;
-        return Objects.equals(teamID, team.teamID) &&
+        return Objects.equals(id, team.id) &&
                 Objects.equals(name, team.name) &&
                 Objects.equals(city, team.city) &&
                 Objects.equals(coach, team.coach) &&
@@ -46,12 +46,12 @@ public class Team implements Comparable<Team>, Serializable {
     }
 
     @Override
-    public int compareTo(Team other) { return this.teamID.compareTo(other.teamID); }
+    public int compareTo(Team other) { return this.id.compareTo(other.id); }
 
     @Override
     public String toString() {
         return "NBA_Team{" +
-                "teamID='" + teamID + '\'' +
+                "teamID='" + id + '\'' +
                 "name='" + name + '\'' +
                 ", city='" + city + '\'' +
                 ", coach='" + coach + '\'' +

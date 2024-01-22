@@ -15,7 +15,7 @@ public class PlayersToResponseFunction implements Function<List<Player>, GetPlay
         return GetPlayersResponse.builder()
                 .players(entities.stream()
                         .map(player -> GetPlayersResponse.Player.builder()
-                                .id(player.getPlayerID())
+                                .id(player.getId())
                                 .name(player.getName())
                                 .surname(player.getSurname())
                                 .build())

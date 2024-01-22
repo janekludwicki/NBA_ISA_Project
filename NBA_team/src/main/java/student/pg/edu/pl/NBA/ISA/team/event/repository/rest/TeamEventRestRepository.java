@@ -22,6 +22,6 @@ public class TeamEventRestRepository implements TeamEventRepository {
 
     @Override
     public void add(Team team) {
-        restTemplate.put("/api/teams/{id}", team, team.getTeamID());
+        restTemplate.put("/api/teams/{id}", team, team.getId());
     }
 }

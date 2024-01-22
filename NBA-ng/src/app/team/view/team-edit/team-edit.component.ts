@@ -47,6 +47,6 @@ export class TeamEditComponent implements OnInit {
             ()=>
                 this
                     .router
-                    .navigate(['/shops']))
+                    .navigate(['/teams']))
   }
 }
