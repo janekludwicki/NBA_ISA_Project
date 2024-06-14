@@ -2,8 +2,6 @@ package student.pg.edu.pl.NBA.NBA_ISA_Project_Lab2.Player;
 
 import lombok.*;
 
-import java.net.Inet4Address;
-
 @Getter
 @Setter
 @AllArgsConstructor
