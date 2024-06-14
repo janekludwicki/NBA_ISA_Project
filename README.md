@@ -1,4 +1,4 @@
-# Internet Services Architecture Laboratory 2 Spring Framework & Spring Boot & Spring Data
+# Laboratory 2- Spring Framework & Spring Boot & Spring Data
 During second laboratory students should get familiar with basic components of Spring
 Framework (component, repository, service), mechanism of dependency injection and
 inversion of control as well as basic components of Spring Data (SQL database access
