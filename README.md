@@ -28,3 +28,4 @@ communicate with the user using standard input and output streams and allow for
 listing available commands, listing all categories, listing all elements, adding new
 element (with category selection), delete existing element, stopping the application.
 The runner should utilize services instances provided by the container. (1 point)
+
