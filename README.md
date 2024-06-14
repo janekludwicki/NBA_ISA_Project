@@ -1,4 +1,4 @@
-# Internet Services Architecture Laboratory 3 Spring MVC
+# Laboratory 3- Spring MVC
 During third laboratory students should get familiar with basic components of Spring MVC
 (REST services implementation). Project should be based on the code developed during
 previous laboratories.
