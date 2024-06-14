@@ -1,9 +1,4 @@
-# Internet Services Architecture Laboratory 1
-Laboratory 1 for Study subject Internet Services Architecture
-Internet Services
-Architectures
-Laboratory 1
-Java SE
+# Laboratory 1- Java SE
 During laboratories students will develop an application which topic should be selected
 during first meeting. Each student should keep own work after each laboratory in order to
 be able to expand it during next one.
@@ -48,20 +43,25 @@ each category. For example task can be printing each collection elements with
 intervals using Thread.sleep() to simulate workload. Observer result with
 different custom pool sizes. For thread pool use ForkJoinPool Remember about
 closing the thread pool. (2 points)
+
 Example data model – RPG game heroes representation (access modifiers, accessors,
-constructors and other methods omitted for the sake of simplification):
-class Profession {
- String name;
- int baseArmor;
- List<Character>characters
-}
-class Character {
- String name;
- int level;
- Profession profession;
-}
-class CharacterDto {
- String name;
- int level;
- String profession;
-}
+constructors and other methods omitted for the sake of simplification):  
+
+
+class Profession {  
+String name;  
+int baseArmor;  
+List<Character>characters  
+}  
+
+class Character {  
+String name;  
+int level;  
+Profession profession;  
+}  
+
+class CharacterDto {  
+String name;  
+int level;  
+String profession;  
+}  
